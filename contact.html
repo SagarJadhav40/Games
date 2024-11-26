@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gaming Website</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    .game-card {
+      background-color: #f8f9fa;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s ease;
+    }
+    .game-card:hover {
+      transform: translateY(-10px);
+    }
+    .carousel-inner img {
+      width: 100%;
+      height: 60vh;
+      object-fit: cover;
+    }
+    footer {
+      background-color: #343a40;
+      color: #fff;
+      padding: 30px 0;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navbar Section -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">GameZone</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Games</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Contact</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">About</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Carousel Section -->
+  <div id="gamingCarousel" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="curosol/car.jpg" class="d-block w-100" alt="Game 1">
+      </div>
+      <div class="carousel-item">
+        <img src="curosol/hilll.jpg" class="d-block w-100" alt="Game 2">
+      </div>
+      <div class="carousel-item">
+        <img src="curosol/subway.jpg" class="d-block w-100" alt="Game 3">
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#gamingCarousel" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#gamingCarousel" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+
+  <!-- Body Section with Cards -->
+  <section class="container my-5">
+    <h2 class="text-center mb-4">Explore The Games</h2>
+    <div class="row row-cols-1 row-cols-md-3 g-4">
+      <!-- Game Card 1 -->
+      <div class="col">
+        <div class="card game-card">
+          <img src="card/bike.jpg" class="card-img-top" alt="Game 1">
+          <div class="card-body">
+            <h5 class="card-title">Bike Racing</h5>
+            <p class="card-text">Experience the thrill and excitement with this amazing game.</p>
+            <a href="https://www.bing.com/ck/a?!&&p=ad2a1ae357363410cf58b5b8dd652da5ad8044dc1ace7144465d970ca32bcdcdJmltdHM9MTczMjU3OTIwMA&ptn=3&ver=2&hsh=4&fclid=198538af-b7fc-6763-0954-2b95b65166bc&psq=bike+racing+game&u=a1aHR0cHM6Ly9wb2tpLmNvbS9lbi9iaWtlP21zb2NraWQ9MTk4NTM4YWZiN2ZjNjc2MzA5NTQyYjk1YjY1MTY2YmM&ntb=1" class="btn btn-primary">Play Now</a>
+          </div>
+        </div>
+      </div>
+      <!-- Game Card 2 -->
+      <div class="col">
+        <div class="card game-card">
+          <img src="card/candy.jpg" class="card-img-top" alt="Game 2">
+          <div class="card-body">
+            <h5 class="card-title">Candy Crush Saga</h5>
+            <p class="card-text">Refresh Your Mind.</p>
+            <a href="https://www.bing.com/ck/a?!&&p=865fafd1577b99f8221d501d3e4f5f784e026fcf739c0cd3e445cad34177664fJmltdHM9MTczMjU3OTIwMA&ptn=3&ver=2&hsh=4&fclid=198538af-b7fc-6763-0954-2b95b65166bc&psq=candy+crsuh&u=a1aHR0cHM6Ly9hcHBzLm1pY3Jvc29mdC5jb20vZGV0YWlsLzlOQkxHR0gxODg0Nj9sYXVuY2g9dHJ1ZSZtb2RlPWZ1bGwmaGw9ZW4tdXMmZ2w9aW4mb2NpZD1iaW5nd2Vic2VhcmNo&ntb=1" class="btn btn-primary">Play Now</a>
+          </div>
+        </div>
+      </div>
+      <!-- Game Card 3 -->
+      <div class="col">
+        <div class="card game-card">
+          <img src="card/free.jpg" class="card-img-top" alt="Game 3">
+          <div class="card-body">
+            <h5 class="card-title">Free Fire</h5>
+            <p class="card-text">Discover new worlds and unlock achievements.</p>
+            <a href="https://www.bing.com/ck/a?!&&p=0b8f24fe31cc9ca3e2bcef7c29b6276540f2b9b74e6b2acc15e39ee77ef1d06dJmltdHM9MTczMjU3OTIwMA&ptn=3&ver=2&hsh=4&fclid=198538af-b7fc-6763-0954-2b95b65166bc&psq=free+fire&u=a1aHR0cHM6Ly93d3cuZ2FyZW5hLnNnL2dwYw&ntb=1" class="btn btn-primary">Play Now</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer Section -->
+  <footer class="text-center">
+    <p>&copy; 2024 GameZone | All Rights Reserved</p>
+    <p>
+      <a href="#" class="text-white">Privacy Policy</a> |
+      <a href="#" class="text-white">Terms of Service</a>
+    </p>
+  </footer>
+
+  <!-- Bootstrap JS (Required for carousel and dropdowns) -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>
